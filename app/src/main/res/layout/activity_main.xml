@@ -7,13 +7,56 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/editLocation"
+        android:layout_width="269dp"
+        android:layout_height="73dp"
+        android:ems="10"
+        android:hint="Syötä kunta"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@id/findButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <Button
+        android:id="@+id/findButton"
+        android:layout_width="268dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#03A9F4"
+        android:onClick="onFindBtnClick"
+        android:text="HAE TIEDOT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editLocation"
+        app:strokeColor="#03A9F4" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/txtNotification"
+        android:layout_width="189dp"
+        android:layout_height="27dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#D52323"
+        app:layout_constraintBottom_toTopOf="@+id/txtHistory"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/findButton" />
+
+    <TextView
+        android:id="@+id/txtHistory"
+        android:layout_width="184dp"
+        android:layout_height="344dp"
+        android:layout_marginTop="68dp"
+        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

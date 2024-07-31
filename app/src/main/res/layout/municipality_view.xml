@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/white"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:id="@+id/rvMunicipalityView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="year"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/textPopulation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="population" />
+            <TextView
+                android:id="@+id/textPopulationChange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="population change" />
+            <TextView
+                android:id="@+id/textSelfSufficiency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="job self sufficiency" />
+            <TextView
+                android:id="@+id/textRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="job rate" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>
